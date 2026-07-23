@@ -24,7 +24,7 @@ const ProductCreate = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/inventory/category/",{headers} )
+      .get("https://farm2home-wntz.onrender.com/inventory/category/",{headers} )
       .then((response) => {
         setCategory(response.data);
       })
@@ -50,7 +50,7 @@ const ProductCreate = () => {
 
   axios
     .post(
-      "http://127.0.0.1:8000/inventory/product/",
+      "https://farm2home-wntz.onrender.com/inventory/product/",
       formData,
       {
         headers: {

@@ -15,7 +15,7 @@ const FarmerOrderView = () => {
   const getOrders = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/billing/farmer-orders/",
+        "https://farm2home-wntz.onrender.com/billing/farmer-orders/",
         { headers }
       );
 
@@ -28,7 +28,7 @@ const FarmerOrderView = () => {
   const updateStatus = async (id, status) => {
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/billing/farmer-orders/${id}/`,
+        `https://farm2home-wntz.onrender.com/billing/farmer-orders/${id}/`,
         { status },
         { headers }
       );
@@ -50,7 +50,7 @@ const FarmerOrderView = () => {
 
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/billing/farmerorder-delete/${id}/`,
+        `https://farm2home-wntz.onrender.com/billing/farmerorder-delete/${id}/`,
         { headers }
       );
 
@@ -193,7 +193,7 @@ const FarmerOrderView = () => {
                         <img
                           src={
                             item.product?.product_image
-                              ? `http://127.0.0.1:8000${item.product.product_image}`
+                              ? `https://farm2home-wntz.onrender.com${item.product.product_image}`
                               : "https://via.placeholder.com/80"
                           }
                           alt={item.product?.product_name}

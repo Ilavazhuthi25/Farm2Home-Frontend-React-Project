@@ -18,7 +18,7 @@ const Cart = () => {
   const getCart = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/billing/cart/",
+        "https://farm2home-wntz.onrender.com/billing/cart/",
         {
           headers,
         }
@@ -33,7 +33,7 @@ const Cart = () => {
   const increase = async (id, qty) => {
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/billing/cart/${id}/`,
+        `https://farm2home-wntz.onrender.com/billing/cart/${id}/`,
         {
           quantity: qty + 1,
         },
@@ -53,7 +53,7 @@ const Cart = () => {
 
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/billing/cart/${id}/`,
+        `https://farm2home-wntz.onrender.com/billing/cart/${id}/`,
         {
           quantity: qty - 1,
         },
@@ -71,7 +71,7 @@ const Cart = () => {
   const deleteItem = async (id) => {
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/billing/cart/${id}/`,
+        `https://farm2home-wntz.onrender.com/billing/cart/${id}/`,
         {
           headers,
         }
@@ -130,7 +130,7 @@ const Cart = () => {
                         <img
                          src={
                             item.product.product_image
-                             ? `http://127.0.0.1:8000${item.product.product_image}`
+                             ? `https://farm2home-wntz.onrender.com${item.product.product_image}`
                              : "/no-image.png"
                          }
                         alt={item.product.product_name}

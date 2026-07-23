@@ -13,7 +13,7 @@ const ProductList = () => {
 
   const DeleteProduct = (id) => {
     axios
-      .delete(`http://127.0.0.1:8000/inventory/product/${id}/`, {
+      .delete(`https://farm2home-wntz.onrender.com/inventory/product/${id}/`, {
         headers,
       })
       .then((response) => {
@@ -28,7 +28,7 @@ const ProductList = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/inventory/product/", {
+      .get("https://farm2home-wntz.onrender.com/inventory/product/", {
         headers,
       })
       .then((response) => {
@@ -107,7 +107,7 @@ const ProductList = () => {
                       {product.product_image ? (
 
                         <img
-                          src={`http://127.0.0.1:8000${product.product_image}`}
+                          src={`https://farm2home-wntz.onrender.com${product.product_image}`}
                           alt={product.product_name}
                           className="w-20 h-20 object-cover rounded-lg border mx-auto"
                         />

@@ -20,7 +20,7 @@ const AddressList = () => {
   const getAddress = () => {
 
     axios
-      .get("http://127.0.0.1:8000/billing/address/", { headers })
+      .get("https://farm2home-wntz.onrender.com/billing/address/", { headers })
       .then((response) => {
         setAddressData(response.data);
       })
@@ -31,7 +31,7 @@ const AddressList = () => {
   const DeleteAddress = (id) => {
 
     axios
-      .delete(`http://127.0.0.1:8000/billing/address/${id}/`, { headers })
+      .delete(`https://farm2home-wntz.onrender.com/billing/address/${id}/`, { headers })
       .then(() => {
         getAddress();
       })

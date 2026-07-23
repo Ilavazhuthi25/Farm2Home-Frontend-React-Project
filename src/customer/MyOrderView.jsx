@@ -17,7 +17,7 @@ const MyOrderView = () => {
   const getOrders = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/billing/orders/",
+        "https://farm2home-wntz.onrender.com/billing/orders/",
         {
           headers,
         }
@@ -74,7 +74,7 @@ const MyOrderView = () => {
                         <img
                           src={
                             item.product?.product_image
-                              ? `http://127.0.0.1:8000${item.product.product_image}`
+                              ? `https://farm2home-wntz.onrender.com${item.product.product_image}`
                               : "https://via.placeholder.com/80"
                           }
                           alt={item.product?.product_name || "Product"}

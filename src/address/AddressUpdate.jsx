@@ -29,7 +29,7 @@ const AddressUpdate = () => {
   const UpdateAddress = () => {
 
     axios.patch(
-      `http://127.0.0.1:8000/billing/address/${id}/`,
+      `https://farm2home-wntz.onrender.com/billing/address/${id}/`,
       {
         full_name,
         phone_number,

@@ -27,7 +27,7 @@ const ProductUpdate = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/inventory/category/", {
+      .get("https://farm2home-wntz.onrender.com/inventory/category/", {
         headers,
       })
       .then((response) => {
@@ -54,7 +54,7 @@ const ProductUpdate = () => {
 
     axios
       .patch(
-        `http://127.0.0.1:8000/inventory/product/${id}/`,
+        `https://farm2home-wntz.onrender.com/inventory/product/${id}/`,
         formData,
         {
           headers: {

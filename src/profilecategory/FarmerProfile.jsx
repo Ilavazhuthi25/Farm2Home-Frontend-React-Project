@@ -33,7 +33,7 @@ const FarmerProfileCreate = () => {
 
     axios
       .post(
-        "http://127.0.0.1:8000/inventory/farmerprofile/",
+        "https://farm2home-wntz.onrender.com/inventory/farmerprofile/",
         formData,
         { headers }
       )

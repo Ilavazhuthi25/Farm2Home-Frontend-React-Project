@@ -15,7 +15,7 @@ const CategoryCreate = () => {
 
   const categorycreate = () => {
     axios
-      .post("http://127.0.0.1:8000/inventory/category/", {
+      .post("https://farm2home-wntz.onrender.com/inventory/category/", {
         category_name,
         description,
         

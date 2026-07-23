@@ -22,7 +22,7 @@ const Checkout = () => {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/billing/address/",
+        "https://farm2home-wntz.onrender.com/billing/address/",
         { headers }
       );
 
@@ -48,7 +48,7 @@ const Checkout = () => {
     try {
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/billing/checkout/",
+        "https://farm2home-wntz.onrender.com/billing/checkout/",
         {
           address: selectedAddress,
         },

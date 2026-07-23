@@ -15,7 +15,7 @@ const Profiles = () => {
       const token = localStorage.getItem("access");
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/authentication/profile/",
+        "https://farm2home-wntz.onrender.com/authentication/profile/",
         {
           headers: {
             Authorization: `Bearer ${token}`,

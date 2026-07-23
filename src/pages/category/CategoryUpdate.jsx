@@ -19,7 +19,7 @@ const CategoryUpdate = () => {
 
   const UpdateCategory = () => {
     axios
-      .patch(`http://127.0.0.1:8000/inventory/category/${id}/`, {
+      .patch(`https://farm2home-wntz.onrender.com/inventory/category/${id}/`, {
         category_name,
         description,
       },{headers})

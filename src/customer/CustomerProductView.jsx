@@ -19,7 +19,7 @@ const CustomerProductView = () => {
   const getProducts = async () => {
     try {
       const response = await axios.get(
-        `http://127.0.0.1:8000/inventory/product-search/?search=${search}`,
+        `https://farm2home-wntz.onrender.com/inventory/product-search/?search=${search}`,
         {
           headers,
         }
@@ -34,7 +34,7 @@ const CustomerProductView = () => {
   const addToCart = async (id) => {
     try {
       await axios.post(
-        "http://127.0.0.1:8000/billing/cart/",
+        "https://farm2home-wntz.onrender.com/billing/cart/",
         {
           product: id,
           quantity: 1,

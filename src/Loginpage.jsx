@@ -19,7 +19,7 @@ const Loginpage = () => {
 
       
       const response = await axios.post(
-        "http://127.0.0.1:8000/authentication/token/",
+        "https://farm2home-wntz.onrender.com/authentication/token/",
         {
           username,
           password,
@@ -34,7 +34,7 @@ const Loginpage = () => {
 
     
       const profile = await axios.get(
-        "http://127.0.0.1:8000/authentication/profile/",
+        "https://farm2home-wntz.onrender.com/authentication/profile/",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -85,7 +85,7 @@ const Loginpage = () => {
 
         try {
             const response = await axios.post(
-                "http://127.0.0.1:8000/authentication/refresh/",
+                "https://farm2home-wntz.onrender.com/authentication/refresh/",
                 { refresh }
             );
 

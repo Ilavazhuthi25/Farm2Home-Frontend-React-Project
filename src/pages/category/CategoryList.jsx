@@ -13,7 +13,7 @@ const CategoryList = () => {
   const getCategories = () => {
     console.log(headers)
     axios
-      .get("http://127.0.0.1:8000/inventory/category/",{headers})
+      .get("https://farm2home-wntz.onrender.com/inventory/category/",{headers})
       .then((response) => {
         setCategorydata(response.data);
       })
@@ -26,7 +26,7 @@ const CategoryList = () => {
 
   const DeleteCategory = (id) => {
     axios
-      .delete(`http://127.0.0.1:8000/inventory/category/${id}/`,{headers})
+      .delete(`https://farm2home-wntz.onrender.com/inventory/category/${id}/`,{headers})
       .then(() => {
         getCategories(); // Refresh list after delete
       })

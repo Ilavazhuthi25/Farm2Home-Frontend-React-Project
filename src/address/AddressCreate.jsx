@@ -24,7 +24,7 @@ const AddressCreate = () => {
   const SaveAddress = () => {
 
     axios.post(
-      "http://127.0.0.1:8000/billing/address/",
+      "https://farm2home-wntz.onrender.com/billing/address/",
       {
         full_name,
         phone_number,

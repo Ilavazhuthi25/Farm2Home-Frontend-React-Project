@@ -21,7 +21,7 @@ const SignupPage = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/authentication/signup/",
+        "https://farm2home-wntz.onrender.com/authentication/signup/",
         {
           username,
           password,
